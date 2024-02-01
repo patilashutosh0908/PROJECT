@@ -1,0 +1,26 @@
+appVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: backend
+  label: 
+    app: backend
+spec:
+  template:
+    metadata:
+      lable:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: patilashutosh0908/ashu:v8
+          ports:
+            - containerports: 8080
+  replicas: 3
+  selector: 
+    matchlabels: 
+      app: backend
+    strategy: 
+      type: RollingUpdate 
+
+            
+        
