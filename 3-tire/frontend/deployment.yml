@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: pailashutosh0908/ashu:v8
+          image: patilashutosh0908/om:1
           ports:
             - containerPort: 80
   replicas: 3
