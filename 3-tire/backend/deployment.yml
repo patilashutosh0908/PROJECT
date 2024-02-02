@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: patilashutosh0908/ashu:v8
+          image: patilashutosh0908/backend:latest
           ports:
             - containerPort: 8080
   replicas: 3
