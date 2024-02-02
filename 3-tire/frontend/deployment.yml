@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: patilashutosh0908/om:1
+          image: docker pull patilashutosh0908/main-backend:latest
           ports:
             - containerPort: 80
   replicas: 3
