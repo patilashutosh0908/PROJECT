@@ -3,17 +3,17 @@ kind: PersistentVolume
 metadata:   
   name: my-pv 
 spec:
-  storageClassname: ""
+  storageClassName: ""
   capacity: 
     storage: 5Gi
   volumeMode:  Filesystem
   accessModes: 
-   - ReadWriteOnce 
+    - ReadWriteOnce 
   persistentVolumeReclaimPolicy: Recycle
   local:
     path: /mnt
   nodeAffinity:
     required:
-      nodeselectorTerm: 
+      nodeSelectorTerm: 
       - matchExpressions:
         - {key: kubernetes.io/hostname, operator: In, values: [controlplane]}
