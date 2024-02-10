@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata: 
+  name: my-secret
+data: 
+  DATABASE_PASS: "MTIzNDU2NzgK"
+  DATABASE_USER: "YWRtaW4K"
